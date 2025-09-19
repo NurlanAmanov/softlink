@@ -3,13 +3,16 @@ import logo from '../../assets/logo/logonew2.png'
 import { CiMenuFries } from 'react-icons/ci'
 import { FaPhone } from 'react-icons/fa'
 import { IoClose } from 'react-icons/io5'
+import SliderCard from './SliderCard'
+import ModernSlider from './MainSlider'
+
 
 function Header() {
   const [open, setOpen] = useState(false)
 
   return (
     <header>
-      <nav className="shadow-md bg-white">
+      <nav className="">
         <div className="menu-container max-w-[1280px] mx-auto flex items-center justify-between px-6 py-4">
           {/* Logo */}
           <div className="logo flex items-center gap-2">
@@ -87,6 +90,9 @@ function Header() {
           onClick={() => setOpen(false)}
         />
       )}
+
+<ModernSlider/>
+
     </header>
   )
 }
