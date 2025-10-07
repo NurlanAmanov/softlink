@@ -5,3 +5,21 @@
 body {
       font-family: "Kanit", sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.montserrat{
+  font-family: "Montserrat", sans-serif;
+ 
+}
+
+
+/* App.css */
+.slider {
+  background: url('https://smartjob.az/storage/articles/8aP7hKErSGys81TJs2zKEb5H2284IAu9K0mGPC0u.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 90%;
+}
+

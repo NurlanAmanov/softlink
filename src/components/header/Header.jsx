@@ -3,32 +3,30 @@ import logo from '../../assets/logo/logonew2.png'
 import { CiMenuFries } from 'react-icons/ci'
 import { FaPhone } from 'react-icons/fa'
 import { IoClose } from 'react-icons/io5'
-import SliderCard from './SliderCard'
-import ModernSlider from './MainSlider'
+import { Link, NavLink } from 'react-router-dom'
+import Slider from './Slider'
 
 
 function Header() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header>
-      <nav className="">
+<>
+    <header className='p-2'>
+      <nav >
         <div className="menu-container max-w-[1280px] mx-auto flex items-center justify-between px-6 py-4">
-          {/* Logo */}
+         
           <div className="logo flex items-center gap-2">
             <img src={logo} alt="Softlink Logo" className="w-[140px] object-contain" />
           </div>
 
-          {/* Desktop Menu */}
-          <ul className="hidden lg:flex items-center gap-8 font-medium text-gray-800">
-            <li><a href="#" className="hover:text-blue-600">Ana səhifə</a></li>
-            <li><a href="#" className="hover:text-blue-600">Xidmətlər</a></li>
-            <li><a href="#" className="hover:text-blue-600">İşlərimiz</a></li>
-            <li><a href="#" className="hover:text-blue-600">Niyə biz?</a></li>
-            <li><a href="#" className="hover:text-blue-600">Əlaqə</a></li>
+           <ul className="hidden lg:flex items-center gap-8 font-medium text-gray-800">
+            <li><NavLink to="/" className="hover:text-blue-600">Ana səhifə</NavLink></li>
+            <li><NavLink to="/our" className="hover:text-blue-600">Xidmətlər</NavLink></li>
+            <li><NavLink to="/port" className="hover:text-blue-600">İşlərimiz</NavLink></li>
+            <li><a href="#why" className="hover:text-blue-600">Niyə biz?</a></li>
+            <li><a href="#contact" className="hover:text-blue-600">Əlaqə</a></li>
           </ul>
-
-          {/* Contact Button (desktop) */}
           <div className="hidden lg:block">
             <a
               href="tel:+994103694318"
@@ -91,9 +89,12 @@ function Header() {
         />
       )}
 
-<ModernSlider/>
+
 
     </header>
+
+
+</>
   )
 }
 

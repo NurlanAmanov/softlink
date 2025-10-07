@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import MainSlider from '../header/MainSlider';
+import AnimatedSlider from '../header/MainSlider';
 
 function About() {
   const [currentStep, setCurrentStep] = useState(0);
@@ -67,8 +69,11 @@ function About() {
   };
 
   return (
+   
+    
+
     <div className="min-h-screen bg-gray-50" style={{ color: '#16163a' }}>
-      {/* Header Section */}
+      <AnimatedSlider />
       <div className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="mb-4">
@@ -86,10 +91,10 @@ function About() {
         </div>
       </div>
 
-      {/* Steps Slider Section */}
+      
       <div className="py-20 bg-gray-50 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
-          {/* Slider Controls */}
+          
           <div className="flex justify-between items-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
               Bizim İş <span className="text-[#16163a]">Prosesimiz</span>
@@ -116,7 +121,7 @@ function About() {
             </div>
           </div>
 
-          {/* Steps Container */}
+         
           <div className="relative">
             <div className="overflow-hidden rounded-3xl">
               <div 
@@ -326,5 +331,7 @@ function About() {
     </div>
   );
 }
+
+
 
 export default About;
