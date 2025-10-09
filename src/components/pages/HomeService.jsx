@@ -1,53 +1,65 @@
+import { Globe, Palette, Smartphone, Wrench, Zap } from 'lucide-react';
 import React, { useState } from 'react';
 
 function HomeService() {
   const [activeService, setActiveService] = useState(0);
-  const services = [
-    {
-      id: 1,
-      title: 'UI/UX Dizayn',
-      description: "Biz brendinq, veb dizayn və kreativ strategiyalar üzrə ixtisaslaşmış tam xidmətli bir dizayn agentliyik.",
-      icon: '🎨',
-      image: 'https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=2036',
-      gradient: 'from-purple-600 to-blue-600'
-    },
-    {
-      id: 2,
-      title: 'Veb İnkişafı',
-      description: 'Müasir texnologiyalar və ən yaxşı təcrübələr əsasında sürətli, çevik və miqyaslana bilən veb tətbiqləri qururuq.',
-      icon: '💻',
-      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072',
-      gradient: 'from-blue-600 to-cyan-600'
-    },
-    {
-      id: 3,
-      title: '3D Dizaynlar',
-      description: 'Fikir və layihələrinizi həyata keçirmək üçün müasir texnologiyalarla heyranedici 3D vizuallaşdırmalar hazırlayırıq.',
-      icon: '🎭',
-      image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2070',
-      gradient: 'from-pink-600 to-purple-600'
-    },
-    {
-      id: 4,
-      title: 'Rəqəmsal Marketinq Dizaynı',
-      description: 'Cəlbedici marketinq materialları və kampaniyalar hazırlayırıq ki, auditoriyanızı cəlb edib nəticə əldə etsin.',
-      icon: '📱',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015',
-      gradient: 'from-orange-600 to-red-600'
-    },
-    {
-      id: 5,
-      title: 'Motion Qrafika',
-      description: 'Brend hekayənizi danışan və izləyiciləri cəlb edən dinamik animasiyalar və hərəkətli qrafiklər hazırlayırıq.',
-      icon: '🎬',
-      image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=2070',
-      gradient: 'from-green-600 to-teal-600'
-    }
-  ];
+const services = [
+  {
+    id: 1,
+    title: 'Veb Saytların Hazırlanması',
+    description:
+      'Biznesiniz üçün sürətli, SEO-dostu və responsiv veb saytlar qururuq: korporativ sayt, landing page, e-commerce və xüsusi həllər.',
+     icon: <Globe className="w-8 h-8" />,
+    image:
+      'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072',
+    gradient: 'from-blue-600 to-cyan-600',
+  },
+  {
+    id: 2,
+    title: 'Mobil Tətbiq İnkişafı',
+    description:
+      'iOS və Android üçün performanslı, miqyaslana bilən mobil tətbiqlər: native və ya cross-platform yanaşma ilə.',
+      icon: <Smartphone className="w-8 h-8" />,
+    image:
+      'https://buildfire.com/wp-content/uploads/2024/09/become-mobile-app-developer-1.jpg',
+    gradient: 'from-indigo-600 to-purple-600',
+  },
+  {
+    id: 3,
+    title: 'Texniki Dəstək',
+    description:
+      '24/7 monitorinq, server idarəetməsi, təhlükəsizlik, backup və SLA əsaslı operativ yardım — sistemləriniz daima işlək qalsın.',
+    icon: <Wrench className="w-8 h-8" />,
+    image:
+      'https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=2072',
+    gradient: 'from-emerald-600 to-teal-600',
+  },
+  {
+    id: 4,
+    title: 'Qrafik Dizayn',
+    description:
+      'Brendinq, loqo, sosial media vizualları, banner və çap materialları — vahid, peşəkar vizual üslubla.',
+    icon: <Palette className="w-8 h-8" />,
+    image:
+      'https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=2036',
+    gradient: 'from-pink-600 to-rose-600',
+  },
+  {
+    id: 5,
+    title: 'Hazır Həllər',
+    description:
+      'Sürətli start üçün hazır paketlər: korporativ sayt şablonları, rezervasiya sistemləri, email marketinq həlləri, menyu idarəetmə sistemləri, CRM inteqrasiyası',
+     icon: <Zap className="w-8 h-8" />,
+    image:
+      'https://www.radicalstart.com/blog/content/images/size/w1075h650/2023/10/Readymade-Solution.jpg',
+    gradient: 'from-orange-600 to-red-600',
+  },
+];
+
 
 
   return (
-    <section className="bg-[#fff] text-black py-20 px-8 lg:px-16">
+    <section className="bg-[#fff] text-black  px-4 py-20 xl:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex items-center justify-between mb-16">
@@ -152,9 +164,9 @@ function HomeService() {
 
     {/* Content */}
     <div className="relative z-10">
-      <div className="w-14 h-14 sm:w-16 sm:h-16 bg-[#d4ff00] rounded-2xl
+      <div className="w-14 h-14 sm:w-16 sm:h-16 bg-[#1a1a3d] rounded-2xl
                       flex items-center justify-center text-2xl sm:text-3xl mb-5 shadow-lg">
-        {services[activeService].icon}
+       <span className='text-white'> {services[activeService].icon}</span>
       </div>
 
       <h3 className="text-white text-2xl sm:text-3xl font-semibold mb-2">
@@ -165,7 +177,7 @@ function HomeService() {
         {services[activeService].description}
       </p>
 
-      <button className="inline-flex items-center gap-2 text-[#d4ff00] font-semibold
+      <button className="inline-flex items-center gap-2 text-[#fff] font-semibold
                          hover:gap-3 transition-all duration-300 group">
         Read More
         <svg className="w-5 h-5 transition-transform group-hover:translate-x-1"
