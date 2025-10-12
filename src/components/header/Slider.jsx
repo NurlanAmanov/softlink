@@ -2,7 +2,7 @@ import React from 'react';
 
 function Slider() {
   return (
-<div className="relative flex items-center min-h-screen bg-gray-900 overflow-hidden">
+<div className="relative flex items-center h-[80vh] xl:min-h-screen bg-gray-900 overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 slider">
 
@@ -12,7 +12,7 @@ function Slider() {
       {/* Content */}
       <div className="relative z-10 w-[90%] mx-auto px-8 lg:px-16 py-20">
         <div className="">
-          <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-8">
+          <h1 className="text-3xl md:text-7xl font-bold text-white leading-tight mb-8">
             Burada {' '}
             <span className="relative inline-block  p-[10px] my-4">
               <span className="absolute inset-0 bg-[#fff] -rotate-[4deg] mb-2  rounded-lg transform"></span>
