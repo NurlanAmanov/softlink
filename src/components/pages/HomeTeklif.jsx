@@ -25,7 +25,7 @@ function ContactSection() {
   return (
     <div className="min-h-screen py-16">
       <div className="w-[90%] mx-auto">
-        <div className="bg-[#1a1a3d] rounded-3xl p-8 md:p-12 lg:p-16">
+        <div className="bg-[#1a1a3d]  rounded-3xl p-8 md:p-12 lg:p-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Sol tərəf - Mətn və statistika */}
             <div>
