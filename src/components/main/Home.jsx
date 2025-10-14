@@ -8,6 +8,7 @@ import ParticleBG from '../animations/ParticleBG'
 import WireTorus from '../animations/ParticleBG'
 import ScrollVelocity from '../animations/AnimationText'
 import HomeWhy from '../pages/HomeWhy'
+import ContactSection from '../pages/HomeTeklif'
 
 function Home() {
   return (
@@ -20,7 +21,7 @@ function Home() {
       <section>
         <HomeAbout />
       </section>
-      <section id='whysecim'>
+      <section id='whysecim'className='slider'>
 <HomeWhy/>
       </section>
       <section id='Homeservice' className='relative'>
@@ -29,6 +30,9 @@ function Home() {
       </section>
       <section id='Homeportf'>
         <HomePortfl />
+      </section>
+      <section id='Contact'>
+        <ContactSection />
       </section>
 
     </>
